@@ -1,0 +1,35 @@
+[project]
+name = "gitreporemote"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ruff>=0.14.10",
+    "yklibpy",
+]
+authors = [
+    { name = "Yasuo Kominami"}
+]
+license = "MIT" # ライセンス
+
+[project.scripts]
+gitrepo = "gitreporemote:mainx"
+gitrepoanalyze = "gitreporemote:main_analyze"
+xt2 = "gitreporemote:xt2"
+xt3 = "gitreporemote:xt3"
+grr_load_yaml = "gitreporemote:load_yaml_main"
+
+[tool.uv.sources]
+yklibpy = { path = "../yklibpy" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gitreporemote", "src"]
+
+[tool.uv]
+package = true

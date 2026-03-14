@@ -1,0 +1,5 @@
+base_dir: E:\Ccur\python3\gitreporemote
+repo_count: 1
+repos:
+- path: E:\Ccur\python3\gitreporemote
+  remotes: {}
