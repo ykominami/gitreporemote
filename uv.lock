@@ -250,7 +250,7 @@ wheels = [
 
 [[package]]
 name = "yklibpy"
-version = "0.2.10"
+version = "0.2.13"
 source = { directory = "../yklibpy" }
 dependencies = [
     { name = "bs4" },
