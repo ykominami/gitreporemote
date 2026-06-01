@@ -59,7 +59,7 @@ YAML 出力用の標準型辞書を返す。
 ```
 
 - `Item.name` がキー、`Item.value` が値。
-- `name` または `value` が `None` の場合は `""` に変換。
+- `value` が `None` の場合は `""` に変換（`name` が `None` の場合はスキップ）。
 
 ---
 
