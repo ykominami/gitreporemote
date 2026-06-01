@@ -72,7 +72,7 @@ YAML 出力用の標準型辞書を返す。
 
 #### `rex() -> re.Pattern` *(classmethod)*
 
-`REMOTE_PATTERN`（`r'([^:]+')`）を返す。
+`REMOTE_PATTERN`（`r'([^:]+)'`）を返す。
 
 #### `retag() -> re.Pattern` *(classmethod)*
 
