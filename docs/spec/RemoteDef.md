@@ -124,7 +124,7 @@ RemoteDef.Item(len_space: int, name: str, value: str, text: str)
 **`kind` の決定ルール:**
 - `name == "fetch"` → `kind = "fetch"`
 - `name == "push"` → `kind = "push"`
-- `name == "_none"` → `kind = "other"` (暫定)
+- `name == "_none"` → `kind = "_none"` (暫定)
 - それ以外 → `kind = "other"`（リモート名ノード）
 
 ---
