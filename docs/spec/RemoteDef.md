@@ -65,9 +65,8 @@ YAML 出力用の標準型辞書を返す。
 
 #### `to_yaml() -> dict`
 
-`to_dict()` と同等だが、内部実装が異なる旧形式メソッド。
+`to_dict()` と同等だが、内部実装が異なる旧形式メソッド（※実装の型注釈は `-> str` だが、実際には内側辞書を返す）。
 `{name: {child.name: child.value, ...}}` の内側辞書を返す。
-
 ---
 
 #### `rex() -> re.Pattern` *(classmethod)*
