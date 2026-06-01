@@ -115,8 +115,8 @@ RemoteDef.Item(len_space: int, name: str, value: str, text: str)
 |------|----|------|
 | `len_space` | `int` | インデント長 |
 | `name` | `str` | キー名 |
-| `kind` | `str` | `"fetch"` / `"push"` / `"other"` / `"root"` |
-| `value` | `str` | `kind` が `fetch` / `push` のとき URL、それ以外は `""` |
+| `kind` | `str` | `"fetch"` / `"push"` / `"other"` / `"root"` / `"_none"` |
+| `value` | `str` | `kind in {"fetch", "push", "_none"}` のとき `value` 引数、それ以外（`other` / `root`）は `""` |
 | `text` | `str` | 残余テキスト |
 | `children` | `list[RemoteDef.Item]` | 子ノード |
 | `parent` | `RemoteDef.Item \| None` | 親ノード |
